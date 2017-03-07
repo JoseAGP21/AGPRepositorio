@@ -1,18 +1,27 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
 
-# AGP
+# Named Resource and Actions API
+This API example demonstrates how to name a resource and its actions, to give
+the reader a better idea about what the resource is used for.
 
-AGP es una API 
 
+# My Message [/message]
+OK, `My Message` probably isn't the best name for our resource but it will do
+for now. Note the URI `/message` is enclosed in square brackets.
 
-# GET /holaMundo
+## Retrieve a Message [GET]
+Now this is informative! No extra explanation needed here. This action clearly
+retrieves the message.
+
 + Response 200 (text/plain)
 
-        Hola Mundo!
-        
-# PUT /holaMundo_Put
-    + Request  (text/plain)
-        Hola Mundo con PUT
+        Hello World!
+
+## Update a Message [PUT]
+`Update a message` - nice and simple naming is the best way to go.
+
++ Request (text/plain)
+
+        All your base are belong to us.
 
 + Response 204
